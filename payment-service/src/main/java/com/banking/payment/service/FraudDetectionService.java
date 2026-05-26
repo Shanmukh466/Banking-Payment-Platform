@@ -31,7 +31,7 @@ public class FraudDetectionService {
 
     private static final BigDecimal SINGLE_PAYMENT_LIMIT = new BigDecimal("50000.00");
     private static final BigDecimal DAILY_LIMIT = new BigDecimal("100000.00");
-    private static final int VELOCITY_LIMIT = 10;
+    private static final int SUSPICIOUS_VELOCITY_LIMIT = 5;
     private static final String FRAUD_SCORE_PREFIX = "fraud:score:";
 
     public String checkFraud(String accountId, BigDecimal amount, String currency) {
